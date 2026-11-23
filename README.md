@@ -1,6 +1,20 @@
+<p align="center">
+  <img src="readme-banner.png" width="920" alt="Frame Math. Translate frames into elapsed time · 00:16:41.000 · 30,000 frames at 30000/1001 fps.">
+</p>
+
 # Frame Math
 
 Translate elapsed time into a zero-based video frame number and back using exact rational frame rates.
+
+## At a glance
+
+| Task | How |
+| --- | --- |
+| **Frame → time** | Use `--frame` with a zero-based frame number. |
+| **Time → frame** | Use `--elapsed` with an elapsed clock reading. |
+| **Set the frame rate** | Pass a rational rate such as `--fps 30000/1001`. |
+
+## Quick start
 
 ```sh
 python3 frame_math.py --fps 30000/1001 --frame 30000
