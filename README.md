@@ -22,3 +22,11 @@ python3 frame_math.py --fps 24000/1001 --elapsed 00:01:12.500
 ```
 
 Requires Python 3.8+. Elapsed output shows a clock rounded to milliseconds and an exact fraction in seconds. Converting elapsed time selects the nearest frame, with ties rounded to the even frame. The clock is elapsed time. It does not interpret SMPTE drop-frame labels. [MIT](LICENSE)
+
+## Development
+
+Run the same dependency-free regression tests used in GitHub Actions.
+
+```sh
+python3 -m unittest discover -s tests -v
+```
